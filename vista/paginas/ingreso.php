@@ -6,7 +6,13 @@
             <input type="text" id="email" name="ingresoEmail">
             <label for="pwd"> Contraseña </label>
             <input type="password" id="pwd" name="ingresoPassword">
-            <button type="submit">Ingresar</button>
+
         </div>
+    <?php
+
+    $ingreso= new ControladorFormularios();
+    $ingreso =  $ingreso->ctrIngreso();
+?>
+    <button type="submit">Ingresar</button>
     </form>
 </div>
